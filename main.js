@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load', function() {
     console.log(document.getElementsByClassName('output_stream')[0].clientHeight);
     var all_divs=document.getElementsByClassName('output_stream');
@@ -7,8 +9,5 @@ window.addEventListener('load', function() {
             a.style.height='400px';
            a.style.overflow='auto';
         }
-
     }
-
-
 });

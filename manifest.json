@@ -7,8 +7,8 @@
     "content_scripts": [
       {
         "matches": [
-          "https://nbviewer.jupyter.org/*.ipynb",
-          "https://github.com/*.ipynb"
+          "*://nbviewer.jupyter.org/*.ipynb",
+          "*://github.com/*.ipynb"
         ],
         "js": ["main.js"]
       }
