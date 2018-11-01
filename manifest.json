@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "my Extension",
+    "version": "0.1",
+     "browser_action": {
+     },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://nbviewer.jupyter.org/github/M-Younus/stock-market-prediction-using-sentiment-analysis/blob/master/enn_notebook.ipynb"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
