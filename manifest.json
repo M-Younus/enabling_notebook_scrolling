@@ -1,15 +1,16 @@
 {
     "manifest_version": 2,
-    "name": "my Extension",
+    "name": "notebook scrolling enabling",
     "version": "0.1",
      "browser_action": {
      },
     "content_scripts": [
       {
         "matches": [
-          "https://nbviewer.jupyter.org/github/M-Younus/stock-market-prediction-using-sentiment-analysis/blob/master/enn_notebook.ipynb"
+          "https://nbviewer.jupyter.org/*.ipynb",
+          "https://github.com/*.ipynb"
         ],
-        "js": ["content.js"]
+        "js": ["main.js"]
       }
     ]
   }
