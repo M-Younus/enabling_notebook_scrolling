@@ -1,21 +1,22 @@
 {
-    "manifest_version": 2,
-    "name": "enabling notebook scrolling",
-    "version": "0.1",
-    "icons":{
-      "16":"icons/16.png",
-      "48":"icons/48.png",
-      "128":"icons/128.png"
-    },
-     "browser_action": {
-     },
-    "content_scripts": [
-      {
-        "matches": [
-          "*://nbviewer.jupyter.org/*.ipynb",
-          "*://github.com/*.ipynb"
-        ],
-        "js": ["main.js"]
-      }
-    ]
-  }
+  "manifest_version": 2,
+  "name": "enabling notebook scrolling",
+  "version": "0.1",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "main.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "activeTab"
+  ]
+}
